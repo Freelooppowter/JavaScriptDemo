@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>++ 运算符</h1>
+
+<p id="demo"></p>
+<p id="st"></p>
+
+<script>
+var x1 = 7,x2 = 7;
+//下面的语句等效于 y = x1;x1 = x1 + 1;
+var y = x1++;
+//下面的语句等效于 x2 = x2 +1;z = x2;
+var z = ++x2;
+document.getElementById("st").innerHTML = y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>

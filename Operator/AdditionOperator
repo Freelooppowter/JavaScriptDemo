@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>++ 运算符</h1>
+
+<p id="demo"></p>
+<p id="st"></p>
+
+<script>
+var x = 7,y=8;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>

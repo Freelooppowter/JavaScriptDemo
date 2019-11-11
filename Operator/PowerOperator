@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>** 运算符</h1>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+//5 ** 2结果是5的2次方，即25
+document.getElementById("demo").innerHTML = x ** 2;
+</script>
+
+</body>
+</html>

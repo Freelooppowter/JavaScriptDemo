@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript 对象</h2>
+
+<p id="demo"></p>
+
+<script>
+/*
+JavaScript 对象用花括号来书写。
+对象属性是 name:value 对，由逗号分隔。
+*/
+var person = {
+    firstName : "Blunt",
+    lastName  : "James",
+    age       : 43,
+    eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>

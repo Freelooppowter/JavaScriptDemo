@@ -15,6 +15,7 @@
 <p id="demo3"></p>
 
 <script>
+//string类型与number类型相加 + 先把number类型转换为string类型，再使用字符串的加法运算
 var x = "Porsche" + 911;
 var y = 911 + 7 + "Porsche";
 var z = 911  + "Porsche" + 7;

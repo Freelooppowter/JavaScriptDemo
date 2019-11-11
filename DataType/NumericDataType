@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript 数据类型</h2>
+
+<p>当字符串和数值相加时，JavaScript 将把数值视作字符串。</p>
+
+<p id="demo"></p>
+
+<p>JavaScript 从左向右计算表达式。不同的次序会产生不同的结果：</p>
+
+<p id="demo2"></p>
+
+<p id="demo3"></p>
+
+<script>
+var x = "Porsche" + 911;
+var y = 911 + 7 + "Porsche";
+var z = 911  + "Porsche" + 7;
+
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo2").innerHTML = "911 + 7 + 'Porsche' = " + y;
+document.getElementById("demo3").innerHTML = "911  + 'Porsche' + 7 = " + z;
+</script>
+
+</body>
+</html>

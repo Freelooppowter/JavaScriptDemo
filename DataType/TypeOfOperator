@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript typeof</h2>
+
+<p>typeof 运算符返回变量或表达式的类型：</p>
+
+<p id="demo"></p>
+
+<script>
+var p = ['Tom','Cat'];
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
+var v;
+document.getElementById("demo").innerHTML = 
+typeof "" + "<br>" +
+typeof "Bill" + "<br>" + 
+typeof "Bill Gates" + "<br>" +
+typeof 0 + "<br>" + 
+typeof 314 + "<br>" +
+typeof 3.14 + "<br>" +
+//typeof 运算符对数组返回 "object"，因为在 JavaScript 中数组属于对象。
+typeof p + "<br>" +
+typeof person + "<br>" +
+//在 JavaScript 中，没有值的变量，其值是 undefined。typeof 也返回 undefined。
+//任何变量均可通过设置值为 undefined 进行清空。其类型也将是 undefined。
+typeof v;
+</script>
+</body>
+</html>

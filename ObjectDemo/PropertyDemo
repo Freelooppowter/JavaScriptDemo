@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 对象属性</h1>
+
+<p>有两种不同的方法来访问对象属性。</p>
+
+<p>您可以使用 person.property 或 person["property"]。</p>
+
+<p id="demo"></p>
+
+<script>
+// 创建对象：
+var person = {
+    firstName: "Bill",
+    lastName : "Gates",
+    id       :  12345
+};
+
+// 显示对象中的数据：
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person["lastName"];
+</script>
+
+</body>
+</html>

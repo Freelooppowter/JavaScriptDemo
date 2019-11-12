@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 事件</h1>
+
+<p>点击按钮来显示日期。</p>
+
+<button onclick="displayDate()">时间是？</button>
+
+<script>
+//JavaScript 代码通常有很多行。事件属性调用函数更为常见：
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html>

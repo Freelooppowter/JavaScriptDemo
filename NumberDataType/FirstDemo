@@ -4,7 +4,7 @@
 
 <h1>JavaScript 数字</h1>
 
-<p>书写 JavaScript 数值既可以带小数点，也可以不带：</p>
+<p>书写 JavaScript 数值既可以带小数点，也可以不带.</p>
 
 <p id="demo"></p>
 

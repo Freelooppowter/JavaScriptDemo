@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 数组方法</h1> 
+
+<h2>toString()</h2>
+
+<p>toString() 方法以逗号分隔的字符串返回数组：</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+</body>
+</html>

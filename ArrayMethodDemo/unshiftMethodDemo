@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 数组方法</h1> 
+
+<h2>unshift()</h2>
+
+<p>unshift() 方法将新元素添加到数组的开头,并将后续元素的索引加1。并返回新数组的元素长度。</p>
+
+<button onclick="myFunction()">试一试</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  var x = fruits.unshift("Lemon");
+  document.getElementById("demo2").innerHTML = "unshift(str)方法将新元素str添加到数组的开头并返回新数组的长度" + x;
+  document.getElementById("demo3").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

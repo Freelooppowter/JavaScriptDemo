@@ -11,13 +11,15 @@
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
+<p id="demo4"></p>
 
 <script>
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo1").innerHTML = fruits;
-fruits.pop();
-document.getElementById("demo2").innerHTML = fruits;
-document.getElementById("demo3").innerHTML = fruits.length;
+var x=fruits.pop();// 从 fruits 删除最后一个元素（"Mango"）并返回 Mango
+document.getElementById("demo2").innerHTML = x;
+document.getElementById("demo3").innerHTML = fruits;
+document.getElementById("demo4").innerHTML = fruits.length;
 </script>
 
 </body>

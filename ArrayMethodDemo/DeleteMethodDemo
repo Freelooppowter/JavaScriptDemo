@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 数组方法</h1> 
+
+<p>删除元素会在数组中留下未定义的孔，即该方法是将删除元素索引处的元素值修改为 undefined </p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML =
+"第一种水果是：" + fruits[0];
+delete fruits[0]; // 把 fruits 中的首个元素改为 undefined
+document.getElementById("demo2").innerHTML =
+"第一种水果是：" + fruits[0];
+</script>
+
+</body>
+</html>

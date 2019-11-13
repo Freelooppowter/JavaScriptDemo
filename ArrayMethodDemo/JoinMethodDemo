@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 数组方法</h1> 
+
+<h2>join()</h2>
+
+<p>join() 方法将数组元素一个个连接成一个字符串，默认以 , 作为元素之间的分隔符。</p>
+
+<p>在这个例子中我们使用“*”作为元素之间的分隔符：</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join("*");
+</script>
+
+</body>
+</html>

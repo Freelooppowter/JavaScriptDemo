@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Math.pow()</h1>
+<p>Math.pow(x,y) 返回 x 的 y 次幂的值：</p>
+<p id="demo"></p>
+
+<h1>JavaScript Math.sqrt()</h1>
+<p>Math.sqrt(x) 返回 x 的平方根：</p>
+<p id="demo2"></p>
+
+<h1>JavaScript Math.abs()</h1>
+<p>Math.abs(x) 返回 x 的绝对值：</p>
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.pow(8,2);
+document.getElementById("demo2").innerHTML = Math.sqrt(64);
+document.getElementById("demo3").innerHTML = Math.abs(-1.5);
+</script>
+
+</body>
+</html>

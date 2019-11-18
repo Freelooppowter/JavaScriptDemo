@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Math.ceil()</h1>
+<p>Math.ceil() 把数字上舍入为最接近的整数：</p>
+<p id="demo"></p>
+
+<h1>JavaScript Math.floor()</h1>
+<p>Math.floor(x) 返回 x 被下舍入为最接近整数的值：</p>
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.ceil(4.4);
+document.getElementById("demo2").innerHTML = Math.floor(4.6);
+</script>
+
+</body>
+</html>

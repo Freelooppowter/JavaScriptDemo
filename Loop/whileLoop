@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript while</h2>
+while 循环会一直循环代码块，只要指定的条件为 true。
+语法
+
+while (条件) {
+    要执行的代码块
+}
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>数字是 " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

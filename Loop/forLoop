@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript 循环</h1>
+<textarea readonly="true">for 循环的语法如下：
+
+for (语句 1; 语句 2; 语句 3) {
+     要执行的代码块
+}
+
+语句 1 在循环（代码块）开始之前执行。
+
+语句 2 定义运行循环（代码块）的条件。
+
+语句 3 会在循环（代码块）每次被执行后执行。</textarea>
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "porsche", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

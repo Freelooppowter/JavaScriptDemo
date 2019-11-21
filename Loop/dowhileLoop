@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript do ... while</h2>
+Do/While 循环
+
+do/while 循环是 while 循环的变体。在检查条件是否为真之前，这种循环会执行一次代码块，然后只要条件为真就会重复循环。
+语法
+<br/>
+do {
+    要执行的代码块
+}
+
+while (条件);
+
+<p id="demo"></p>
+
+<script>
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>数字是 " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

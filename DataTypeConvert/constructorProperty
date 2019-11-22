@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript constructor 属性</h2>
+
+<p>constructor 属性返回变量或对象的构造器函数。</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+  "john".constructor + "<br>" +
+  (3.14).constructor + "<br>" +
+  false.constructor + "<br>" +
+  [1,2,3,4].constructor + "<br>" +
+  {name:'john', age:34}.constructor + "<br>" +
+  new Date().constructor + "<br>" +
+  function () {}.constructor;
+  /* 输出结果如下：
+  Javascript constructor 属性
+
+constructor 属性返回变量或对象的构造器函数。
+
+function String() { [native code] }
+function Number() { [native code] }
+function Boolean() { [native code] }
+function Array() { [native code] }
+function Object() { [native code] }
+function Date() { [native code] }
+function Function() { [native code] }
+
+可以通过 constructor 来判断对象是否是数组或者日期，解决typeof无法判断出对象是否是数组或日期的问题。
+例如通过 myArray.constructor === Array 判断myArray对象是否是数组
+  */
+</script>
+
+</body>
+</html>

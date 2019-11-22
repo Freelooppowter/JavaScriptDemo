@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript typeof 运算符</h2>
+JavaScript 数据类型<br>
+JavaScript 中有五种可包含值的数据类型：<br>
+字符串（string）<br>
+数字（number）<br>
+布尔（boolean）<br>
+对象（object）<br>
+函数（function）<br>
+有三种对象类型：<br>
+对象（Object）<br>
+日期（Date）<br>
+数组（Array）<br>
+
+
+    
+<p>typeof 运算符返回变量、对象、函数或表达式的类型。</p>
+
+<p id="demo"></p>
+
+<script>
+
+document.getElementById("demo").innerHTML = 
+  typeof "john" + "<br>" +
+  typeof 3.14 + "<br>" +
+  typeof NaN + "<br>" +
+  typeof false + "<br>" +
+  typeof [1,2,3,4] + "<br>" +
+  typeof {name:'john', age:34} + "<br>" +
+  typeof new Date() + "<br>" +
+  typeof function () {} + "<br>" +
+  typeof myCar + "<br>" +
+  typeof null;
+</script>
+
+</body>
+</html>

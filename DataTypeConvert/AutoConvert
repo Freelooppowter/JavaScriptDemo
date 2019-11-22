@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>如果 JavaScript 尝试操作一种“错误”的数据类型，它会试图将该值转换为“正确”的类型。
+结果并不总是你所期望的：建议开发人员手动显式进行类型转换，以保证正确的结果</h2>
+<p id="demo"></p>
+
+<script>
+var x = [];
+document.getElementById("demo").innerHTML =
+(5 + null) + "<br>"  +
+("5" + null) + "<br>" +
+("5" + 2) + "<br>" +
+("5" - 2) + "<br>" +
+("5" * "2") + "<br>" +
+("5" / "2") + "<br>"
+</script>
+
+</body>
+</html>

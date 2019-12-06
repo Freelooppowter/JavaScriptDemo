@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>此页面上的脚本启动这个时钟：</p>
+
+<p id="demo"></p>
+
+<button onclick="controlTimer()">停止时间</button>
+
+<script>
+var myVar = setInterval(myTimer ,1000);
+var isStart=false;
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  isStart=true;
+}
+function controlTimer()
+{
+	if(isStart){
+     	clearInterval(myVar);
+        isStart=false;
+    }
+    else{
+    	myVar = setInterval(myTimer ,1000);
+    	myTimer();
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>点击“试一试”。等待 3 秒钟，页面将提示“Hello”。</p>
+
+<button onclick="setTimeout(myFunction, 3000);">试一试</button>
+
+<script>
+function myFunction() {
+  alert('Hello');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>XMLHttpRequest 对象</h1>
+
+<p id="demo">让 AJAX 改变这段文本。</p>
+
+<button type="button" onclick="loadDoc()">更改内容</button>
+
+<script>
+function loadDoc() {
+  var xhttp = CreateXmlHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/example/js/ajax_info.txt", true);
+  xhttp.send();
+}
+//兼容IE6，IE5 老版本的 Internet Explorer（IE5 和 IE6）使用 ActiveX 对象：
+function CreateXmlHttpRequest()
+{
+	if (window.XMLHttpRequest) {
+    return new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+     return new ActiveXObject("Microsoft.XMLHTTP");
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Navigator 对象</h1>
+
+<p>appName 属性返回浏览器的应用程序名称：</p>
+<p>奇怪的是，“Netscape” 是 IE11、Chrome、Firefox 和 Safari 的应用程序名称。</p>
+<p id="demo"></p>
+
+<p>appCodeName 属性返回浏览器的代码名称。</p>
+<p>不要依赖它！ “Mozilla” 是 Chrome、Firefox、IE、Safari 和 Opera 的应用程序代码名称。</p>
+<p id="demo2"></p>
+
+<p>product 属性返回浏览器的产品名称。</p>
+<p>不要依赖它！大多数浏览器都将 “Gecko” 作为产品名称返回！</p>
+<p id="demo3"></p>
+
+<p>appVersion 属性返回有关浏览器的版本信息：</p>
+<p id="demo4"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"navigator.appName 是：" + navigator.appName;
+
+document.getElementById("demo2").innerHTML = 
+"navigator.appCodeName 是： " + navigator.appCodeName;
+
+document.getElementById("demo3").innerHTML =
+"navigator.product 是：" + navigator.product;
+
+document.getElementById("demo4").innerHTML = navigator.appVersion;
+</script>
+</body>
+
+</html>
